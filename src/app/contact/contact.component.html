@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Floating Screen</title>
+</head>
+
+<body>
+  <div class="floating-screen">
+    <div class="floating-content">
+      <div class="circle">
+        <img class="icons" src="assets/ContactPic.jpeg" />
+      </div>
+      <h1>Janhavi Pawar</h1>
+      <br>
+      <h2>Contact Information</h2>
+      <p>Phone: {{ contact.phone }}</p>
+      <p>Email: {{ contact.email }}</p>
+      <a [href]="contact.linkedin" target="_blank">
+        <img class="icon" src="assets/linkedin-image.png" alt="LinkedIn" (click)="openLink(contact.linkedin)" />
+      </a>
+      <a [href]="contact.github" target="_blank">
+        <img class="icon" src="assets/github-image.png" alt="GitHub" (click)="openLink(contact.github)" />
+      </a>
+    </div>
+    <footer class="footer">
+      
+    </footer>
+  </div>
+ 
+</body>
+
+</html>

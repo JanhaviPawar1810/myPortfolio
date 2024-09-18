@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 85vh;
+  background-color: #f5f5f5;
+}
+
+.floating-screen {
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  width: 400px;
+  position: relative;
+  animation: float 2s ease-in-out infinite;
+}
+
+.floating-content {
+  text-align: center;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.icon {
+  width: 30px; /* Set the desired width */
+  height: 30px; /* Set the desired height */
+  margin-right: 10px; /* Add margin to create space between images */
+  cursor: pointer; /* Add pointer cursor for user interaction */
+}
+.circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Make it a circle */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  animation: pulse 2s infinite; /* Add a pulsating animation */
+}
+
+.icons {
+  width: 150px;
+  height: 150px;
+  /* Your existing styles for the icon */
+  /* ... */
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+.footer {
+  margin-top: 20px;
+  text-align: center;
+  color: #777; /* Adjust the color as needed */
+}

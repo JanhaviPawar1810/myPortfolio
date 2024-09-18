@@ -1,0 +1,57 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <img src="assets/Homephoto.jpg" class="img-fluid" alt="Background Image">
+    </div>
+    <div class="col-md-6">
+      <h2 class="mb-4">About Me</h2>
+      <div class="">
+        <p class="lead">
+          A Data Analysis and Data Science professional with a Master's in Data Science, 
+          experienced in building data-driven solutions through advanced analytics, machine learning, 
+          and deep learning techniques. My expertise includes working with large datasets, developing predictive models, 
+          and optimizing computational efficiency. With a strong foundation in Python, statistical modeling, 
+          and parallel computing, I am passionate about leveraging data to drive meaningful insights and solve complex problems.
+
+
+        </p>
+
+        <div class="ml-auto d-flex gap-2">
+          <a class="btn btn-funky-moon"  (click)="speakOnLoad()">Listen in Audio Format</a>
+          <a *ngIf="isSpeaking" class="btn btn-funky-moon"  (click)="stopSpeaking()">Stop</a>
+        </div>
+        
+
+      </div>
+      <div class="mt-4">
+        <h3 class="mb-3">Education</h3>
+        <ul class="list-unstyled">
+          <li>
+            <strong>Master of Science in Data Science</strong>
+            <br>
+            <span class="text-muted">Manchester Metropolitan University, UK</span>
+            <br>
+            <span class="text-muted">September 2022 – September 2023</span>
+            <br>
+            <span class="text-muted">Grade: Merit</span>
+          </li><br>
+          <li>
+            <strong>Bachelor of Technology, Information Technology</strong>
+            <br>
+            <span class="text-muted">PVPIT, Sangli, India</span>
+            <br>
+            <span class="text-muted">July 2017 - July 2021</span>
+            <br>
+            <span class="text-muted">CGPA : 8.7</span>
+          </li>
+        </ul>
+      </div>
+      <div class="ml-auto d-flex gap-2 mt-4">
+        <a class="btn btn-funky-moon" href="tel:+447768379510">Call me</a>
+        <a class="btn btn-funky-moon" href="mailto:janhavipawar1810@gmail.com">Email me</a>
+        
+      </div>
+      <br>
+    </div>
+  </div>
+</div>
