@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'personal-website';
+  title = 'myPortfolio';
   isSubmenuVisible: boolean = false;
 
   toggleSubmenu() {
